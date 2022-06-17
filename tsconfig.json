@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.test.js", "pages/product/[slug].jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.test.js", "pages/product/[slug].jsx", "store/store.ts", "libs/utils.js"],
   "exclude": ["node_modules"]
 }

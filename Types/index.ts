@@ -11,7 +11,7 @@ export interface bannerType {
     smallText: string;
 }
 
-interface imageType{
+export interface imageType{
     _type: 'image';
     _key: string;
 }
