@@ -7,9 +7,10 @@ import runFireWorks from '../../libs/utils';
 type Props = {}
 
 const success = (props: Props) => {
-    useEffect(() => {
-      runFireWorks();
-    }, [])
+
+    // useEffect(() => {
+    //   runFireWorks();
+    // }, [])
     
   return (
     <div className='success-wrapper flex justify-center bg-white' style={{minHeight:'60vh'}}>

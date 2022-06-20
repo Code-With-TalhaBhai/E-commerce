@@ -156,7 +156,7 @@ export const getStaticPaths = async()=>{
 
   const paths = slugPages?.map((page:any)=>({
     params:{
-      slug: page.slug.current,
+      slug: page.slug.current
     }
   }));
   
