@@ -39,8 +39,8 @@ const ProductDetails = ({products,singleProduct:{name,image,rating,price,details
         singleItemQty:cart.singleItemOrder.singleItemQty,
         itemTotal:Number((price*cart.singleItemOrder.singleItemQty).toFixed(2)),
         index: cart.order.indexOf(checkID)
-
       }));
+      
     }else{
     dispatch(
     addToCart({
@@ -51,7 +51,7 @@ const ProductDetails = ({products,singleProduct:{name,image,rating,price,details
       singleItemQty:cart.singleItemOrder.singleItemQty,
       itemTotal:Number((price*cart.singleItemOrder.singleItemQty).toFixed(2))
       })
-      );
+    )
     }
       
       dispatch(priceCalculator());
