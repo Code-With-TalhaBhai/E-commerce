@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "export": "next export"
   },
   "dependencies": {
     "@babel/core": "^7.18.2",
@@ -17,6 +18,7 @@
     "@stripe/stripe-js": "^1.31.0",
     "canvas-confetti": "^1.5.1",
     "cypress": "^10.1.0",
+    "export": "^0.1.337",
     "next": "^12.1.6",
     "next-sanity": "^0.5.2",
     "react": "18.1.0",
@@ -28,6 +30,7 @@
     "stripe": "^9.8.0"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.17.12",
     "@babel/preset-typescript": "^7.17.12",
     "@types/jest": "^28.1.0",
     "@types/node": "17.0.35",

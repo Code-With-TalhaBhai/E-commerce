@@ -59,7 +59,6 @@ export const cartSlice = createSlice({
     priceCalculator: (state) => {
       var processedTotal = 0;
       state.price = Number(subTotal()?.toFixed(2));
-      localStorage.setItem('price',subTotal()?.toFixed(2))
       function subTotal(){
       if(state?.order?.length>0){
       state.order.forEach(function(item:orderedItems){
@@ -81,7 +80,6 @@ export const cartSlice = createSlice({
 
     addToCart: (state,action:PayloadAction<any>)=>{
       state.order.push(action.payload);
-      localStorage.setItem('order',JSON.stringify(state.order));
     },
 
 
@@ -94,7 +92,6 @@ export const cartSlice = createSlice({
       return start;
       }
       state.qty = subTotalQty();
-      localStorage.setItem('Quantity',subTotalQty().toString())
     },
 
 

@@ -1,16 +1,16 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import {BsFillBagCheckFill} from 'react-icons/bs';
-import runFireWorks from '../../libs/utils';
+import runFireWorks from '../libs/utils';
 
+const success = () => {
 
-type Props = {}
-
-const success = (props: Props) => {
     useEffect(() => {
       runFireWorks();
+      // console.log('running')
     }, [])
     
+
   return (
     <div className='success-wrapper flex justify-center bg-white' style={{minHeight:'60vh'}}>
         <div className="success sm:w-3/4 w-full mt-40 bg-bannerContainer p-14 rounded-2xl flex flex-col items-center">
