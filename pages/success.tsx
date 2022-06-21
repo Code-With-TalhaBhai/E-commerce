@@ -3,11 +3,12 @@ import React, { useEffect } from 'react';
 import {BsFillBagCheckFill} from 'react-icons/bs';
 import runFireWorks from '../libs/utils';
 
-const success = () => {
+type Props = {}
+
+const success = (props: Props) => {
 
     useEffect(() => {
       runFireWorks();
-      // console.log('running')
     }, [])
     
 
@@ -35,4 +36,4 @@ const success = () => {
   )
 }
 
-export default success
+export default success;
