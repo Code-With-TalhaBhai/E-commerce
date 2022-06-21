@@ -24,9 +24,13 @@ const ProductDetails = ({products,singleProduct:{name,image,rating,price,details
   const dispatch:AppDispatch = useDispatch();
   const [imageIndex, setImageIndex] = useState<number>(0)
   // console.log(rating)
+  // useEffect(() => {
+  //   dispatch(resetQty());
+  // }, [name,addToCart])
+
   useEffect(() => {
     dispatch(resetQty());
-  }, [name,addToCart])
+  }, [name,cart.order])
   
   
   const addToCartProduct = ()=>{

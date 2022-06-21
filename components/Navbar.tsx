@@ -13,10 +13,13 @@ const Navbar = (props: Props) => {
   const cart = useSelector((state:RootState)=>state.cart);
   const dispatch:AppDispatch = useDispatch();
   // console.log(cart.showCart);
+  // useEffect(() => {
+  //   dispatch(totalQty());
+  // }, [addToCart])
+
   useEffect(() => {
     dispatch(totalQty());
-    setQty(localStorage.Quantity);
-  }, [addToCart])
+  }, [cart.order])
   
   return (
     <div className='navbar-container flex justify-between relative my-3 mx-5'>
