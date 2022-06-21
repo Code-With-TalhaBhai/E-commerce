@@ -1,4 +1,3 @@
-import Head from 'next/head'
 // import Image from 'next/image';
 import { Cart, Footer, FooterBanner, HeroBanner, Product } from '../components'
 import styles from '../styles/Home.module.css'
@@ -6,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import {client} from '../libs/client'
 import {bannerType} from '../Types/index'
 import {productType} from '../Types/index'
+import React from 'react'
 // import { groq } from 'next-sanity';
 
 type Props = {
