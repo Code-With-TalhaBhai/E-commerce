@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import {BsFillBagCheckFill} from 'react-icons/bs';
-import runFireWorks from '../libs/utils';
+import runFireWorks from '../../libs/utils';
 
 type Props = {}
 

@@ -15,7 +15,7 @@ export default async function handler(req:any, res:any) {
       const params = {
         mode: 'payment',
         allow_promotion_codes: true,
-        success_url: `${req.headers.origin}/success`,
+        success_url: `${req.headers.origin}/product/success`,
         cancel_url: `${req.headers.origin}`,
         submit_type: 'pay',
         billing_address_collection: 'auto',
