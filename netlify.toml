@@ -1,0 +1,6 @@
+[build]
+    commands = "next build"
+    publis = ".next"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
